@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicolás Mínguez Aguirre</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Crimson+Pro:wght@300&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --black: #000000;
+            --white: #ffffff;
+            --gray: #666666;
+        }
+
+        body {
+            font-family: 'Space Mono', monospace;
+            background: var(--white);
+            color: var(--black);
+            line-height: 1.6;
+            padding: 60px 20px;
+            max-width: 680px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: clamp(32px, 5vw, 48px);
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 8px;
+            line-height: 1.1;
+        }
+
+        h2 {
+            font-size: 12px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            margin-top: 80px;
+            margin-bottom: 24px;
+            color: var(--gray);
+        }
+
+        p {
+            font-family: 'Crimson Pro', serif;
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 1.7;
+            margin-bottom: 20px;
+            max-width: 560px;
+        }
+
+        a {
+            color: var(--black);
+            text-decoration: none;
+            border-bottom: 1px solid var(--black);
+            transition: opacity 0.2s;
+        }
+
+        a:hover {
+            opacity: 0.5;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            color: var(--gray);
+            margin-bottom: 40px;
+            font-weight: 400;
+        }
+
+        .project {
+            margin-bottom: 32px;
+            padding-bottom: 32px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .project:last-child {
+            border-bottom: none;
+        }
+
+        .project-title {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .project-desc {
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+
+        .project-tech {
+            font-size: 11px;
+            color: var(--gray);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+            margin-top: 12px;
+        }
+
+        .links a {
+            font-size: 14px;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        li {
+            font-family: 'Crimson Pro', serif;
+            font-size: 16px;
+            font-weight: 300;
+            margin-bottom: 8px;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 40px 16px;
+            }
+
+            h2 {
+                margin-top: 60px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Nicolás Mínguez Aguirre</h1>
+        <p class="subtitle">Data Science Student — Barcelona — <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="81efe8e2eeede0f2afece8efe6f4e4fbc1e4f2f5f4e5e8e0eff5f2aff4f3f7afe2e0f5">[email&#160;protected]</a></p>
+    </header>
+
+    <section>
+        <p>
+            Third-year Data Science and AI student at Universitat Rovira i Virgili. 
+            Focused on building practical solutions through data analysis, machine learning, 
+            and web applications.
+        </p>
+        <div class="links">
+            <a href="https://github.com/nicominguez" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/nicolas-minguez-aguirre/" target="_blank">LinkedIn</a>
+            <a href="resume.pdf" target="_blank">Resume</a>
+        </div>
+    </section>
+
+    <h2>Selected Projects</h2>
+
+    <div class="project">
+        <div class="project-title">Blackjack Simulator</div>
+        <p class="project-desc">
+            Configurable Monte Carlo simulation framework to execute reproducible experiments 
+            and quantify strategy performance. Evaluated five strategies over 10⁶ simulated hands, 
+            finding that favorable house rules reduced house edge by ∼0.2%.
+        </p>
+        <div class="project-tech">Python · Monte Carlo Simulation · Data Analysis</div>
+        <div class="links">
+            <a href="https://nicominguez-portfolio.streamlit.app/" target="_blank">Live Demo →</a>
+            <a href="https://github.com/nicominguez/blackjack" target="_blank">Source Code →</a>
+        </div>
+    </div>
+
+    <div class="project">
+        <div class="project-title">Real Estate Photography Site</div>
+        <p class="project-desc">
+            Booking platform for real estate media using SvelteKit for the frontend 
+            and Firebase for the backend, implementing authentication, file storage, 
+            and serverless functions.
+        </p>
+        <div class="project-tech">SvelteKit · Firebase · Authentication</div>
+        <div class="links">
+            <a href="https://renma-0.web.app/" target="_blank">Live Demo →</a>
+            <a href="https://github.com/nicominguez/renma" target="_blank">Source Code →</a>
+        </div>
+    </div>
+
+    <div class="project">
+        <div class="project-title">Multivariable Calculus, Visualized</div>
+        <p class="project-desc">
+            2D and 3D animations in Python with the Manim library to visually 
+            explain multivariable calculus concepts for the Spanish-speaking audience.
+        </p>
+        <div class="project-tech">Python · Manim · Mathematical Visualization</div>
+        <div class="links">
+            <a href="https://github.com/nicominguez/CII" target="_blank">View Project →</a>
+        </div>
+    </div>
+
+    <h2>Skills</h2>
+    <ul>
+        <li>Python, Java, R</li>
+        <li>Data Visualization (Manim, Matplotlib, Pandas, NumPy)</li>
+        <li>Mathematical Computing (SageMath)</li>
+        <li>Web Development (HTML, CSS, JavaScript, TypeScript, Tailwind, Svelte, SvelteKit)</li>
+        <li>Tools & Frameworks (Quarto, Streamlit, Mapbox)</li>
+    </ul>
+
+    <h2>Education</h2>
