@@ -1,1 +1,1 @@
-👉 [nicominguez.github.io](https://nicominguez.github.io)
+👉 [nicominguez.github.io](https://nicominguez.github.io/nicominguez/)
